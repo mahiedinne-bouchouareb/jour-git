@@ -18,17 +18,77 @@
             <td class="titre">Définitions</td>
         </tr>
         <tr>
-            <td>Git push</td>
-            <td>Maria Anders</td>
+            <td>git branch newBranch</td>
+            <td>Crée dans le repo local la nouvelle branche newBranch qui est un fork de la branche courante.</td>
         </tr>
         <tr>
-            <td>Git push</td>
-            <td>Maria Anders</td>
+            <td>git branch-m locBranch</td>
+            <td>Renomme la branche courante avec le nouveau nom locBranch</td>
         </tr>
         <tr>
-            <td>Git push</td>
-            <td>Maria Anders</td>
+            <td>git branch -d locBranch</td>
+            <td>Supprime la branche locBranch du repo local</td>
         </tr>
+        <tr>
+            <td>git branch -u origin/remBranch</td>
+            <td>Ordonne à la branche courante de traquer la branche distante remBranch</td>
+        </tr>
+        <tr>
+            <td>git branch --track locBranch origin/remBranch</td>
+            <td>Similaire à la commande numéro 4, à la différence qu'on explicite la branche locale qui traque</td>
+        </tr>
+        <tr>
+            <td>git branch -v</td>
+            <td>Liste les branches sur le repo loca</td>
+        </tr>
+        <tr>
+            <td>git branch -v -a</td>
+            <td>Liste les branches sur le repo distant</td>
+        </tr>
+        <tr>
+            <td>git branch -r | wc -l</td>
+            <td>Compte le nombre de branches effectivement présentes sur le repo distant</td>
+        </tr>
+        <tr>
+            <td>git branch --merged</td>
+            <td>Liste toutes les branches ayant subies un merge vers d’autres branches</td>
+        </tr>
+        <tr>
+            <td>git branch --no-merged</td>
+            <td>Liste toutes les branches n’ayant jamais subies un merge</td>
+        </tr>
+    
+        <tr>
+            <td>git log</td>
+            <td>Affiche l’historique des commits effectués sur la branche courante avec leurs SHA1 (très verbeux).</td>
+        </td>
+    
+        <tr>
+           <td>git log --pretty=oneline</td> 
+           <td>Affiche l’historique des commits effectués sur la branche courante, chaque commit tenant uniquement sur une ligne</td> 
+        </tr>
+        
+        <tr>
+            <td>git log --name-status HEAD^..HEAD</td>
+            <td>Liste tous les commits récents effectués, mais non encore pushés</td>
+        </tr>
+        
+        <tr>
+            <td>git tag nomTag</td>
+            <td>Crée un tag de nom nomTag sur la branche courante</td>
+        </tr>
+    
+        <tr>
+            <td>git show nomTag</td>
+            <td>Donne les détails sur le tag nomTag de la branche courante.</td>
+        </tr>
+        <tr>
+            <td>git tag</td>
+            <td>Liste tous les tags placés sur la branche courante</td >       
+        </tr>
+    
+    
+    
     </table>
 </body>
 
